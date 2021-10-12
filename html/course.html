@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css"
+		integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		.card {
+			transition-property: transform;
+			transition-duration: 0.5s;
+			transition-timing-function: ease-in-out;
+		}
+
+		.card:hover {
+			transform: translateY(-10px);
+		}
+
+		ul li {
+			list-style: none;
+		}
+
+
+
+		nav li.activeMenu,
+		li:hover {
+			border-bottom: 2px solid yellow;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- navbar starts -->
+	<nav class="navbar navbar-expand-lg   navbar-dark " style="background-color: green;">
+		<div class="container-fluid">
+			<a class="navbar-brand fs-3 fw-bold ps-2" href="#">INFO-TECH</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+					<li class="nav-item">
+						<i class="fas fa-home text-white ps-3 "></i>
+						<a class="nav-link active fw-bold" aria-current="page" href="../index.html">HOME</a>
+					</li>
+					<li class="nav-item activeMenu">
+						<i class="fas fa-briefcase text-white ps-4 "></i>
+
+						<a class="nav-link active fw-bold" aria-current="page" href="#">COURSES</a>
+					</li>
+					<li class="nav-item">
+						<i class="fas fa-users text-white ps-4 "></i>
+
+						<a class="nav-link active fw-bold" aria-current="page" href="about.html">ABOUT US</a>
+					</li>
+					<li class="nav-item">
+						<i class="fas fa-envelope text-white ps-5 "></i>
+
+						<a class="nav-link active fw-bold" aria-current="page" href="contact.html">CONTACT US</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-light" type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<!-- navbar ends -->
+
+	<!-- courses -->
+	<div class="container">
+		<div class="row  rounded 	justify-content-center align-items-center mt-4 p-2" style="background-color: grey">
+			<div class="col-3 fs-4 fw-bold text-white text-center">COURSES</div>
+		</div>
+		<div class="row mt-3  justify-content-center align-items-center">
+			<div class="col-10 col-md-5 col-lg-4 mb-3 ">
+				<div class="card text-white"
+					style="width: 18rem; background-color: grey; margin-left: auto;margin-right: auto;">
+					<img src="../css/images/java9.png" height="150px" class="card-img-top " alt="...">
+					<div class="card-body">
+
+						<p class="card-text">
+						<ul>
+							<li>JAVA</li>
+							<li>full stack</li>
+							<li>HTML</li>
+							<li>Javascript</li>
+							<li>http and REST</li>
+							<li>Spring framework</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-md-5 col-lg-4 mb-3 ">
+				<div class="card text-white"
+					style="width: 18rem; background-color: grey; margin-left: auto;margin-right: auto;">
+					<img src="../css/images/py4.png" height="150px" class="card-img-top" alt="...">
+					<div class="card-body">
+						<p class="card-text">
+						<ul>
+							<li>HTML & CSS3 Syllabus</li>
+							<li>Bootstrap Syllabus </li>
+							<li>Javascript Syllabus </li>
+							<li>PostgreSQL Syllabus</li>
+							<li>Vue JSSyllabus </li>
+							<li>Django Syllabus</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-10  col-md-5 col-lg-4 mb-3">
+				<div class="card text-white"
+					style="width: 18rem ; background-color: grey;margin-left: auto;margin-right: auto; ">
+					<img src="../css/images/ml.png" height="150px" class="card-img-top" alt="...">
+					<div class="card-body">
+						<p class="card-text">
+						<ul>
+							<li>supervised learning </li>
+							<li>Regression </li>
+							<li>Recurrent Neural Network & LSTM</li>
+							<li>Deep diving into Neural Network</li>
+
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-10 col-md-5 col-lg-4 mb-3">
+				<div class="card text-white"
+					style="width: 18rem; background-color: grey; margin-left: auto;margin-right: auto;">
+					<img src="../css/images/ai10.png" height="150" class="card-img-top" alt="...">
+					<div class="card-body">
+						<p class="card-text">
+						<ul>
+							<li>Artificial Neural Network </li>
+							<li>Convolution Neural Network </li>
+							<li>Lambda Architecture for Big Data </li>
+							<li>Deep diving into Neural Network </li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-md-5 col-lg-4 mb-3">
+				<div class="card text-white"
+					style="width: 18rem; background-color: grey; margin-left: auto;margin-right: auto;">
+					<img src="../css/images/big data.png" height="150" class="card-img-top" alt="...">
+					<div class="card-body">
+						<p class="card-text">
+						<ul>
+							<li>Big Data History</li>
+							<li>Top Big Data Tools </li>
+							<li>Lambda Architecture for Big Data </li>
+							<li>Spark Directed Acyclic Graphs </li>
+							<li>Apache Spark Stages</li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-md-5 col-lg-4 mb-3">
+				<div class="card text-white"
+					style="width: 18rem; background-color: grey; margin-left: auto;margin-right: auto;">
+					<img src="../css/images/big.png" height="150" class="card-img-top" alt="...">
+					<div class="card-body">
+						<p class="card-text">
+						<ul>
+							<li>Manual Testing</li>
+							<li>Selenium Testing </li>
+							<li>Core Java</li>
+							<li>OOPs</li>
+
+							<li>Limitations of Spark</li>
+							<li>Recurrent Neural Network </li>
+
+
+
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- end -->
+	</div>
+	<!-- courses end -->
+
+	<!-- footer -->
+	<div class="container-fluid">
+		<div class="row  align-items-center fw-bold mt-4"
+			style="background-color:green; color: white; text-align: center;">
+			<div class="col  p-2">
+				Copyrights &copy; 2021. All rights reserved by INFO-TECH
+			</div>
+		</div>
+	</div>
+	<!-- footer ends -->
+
+
+
+
+
+
+</body>
+
+</html>
